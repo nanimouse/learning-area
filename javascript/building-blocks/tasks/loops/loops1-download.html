@@ -24,17 +24,41 @@
 
     </section>
 
+
+    <script>
+      const myArray = ['tomatoes', 'chick peas', 'onions', 'rice', 'black beans']; //array
+      const list = document.createElement('ul'); //unordered list is created
+
+  
+      // Add your code here
+
+      for( i=0; i<=myArray.length-1; i++ ){
+
+        let listItem = document.createElement('li'); //created list item tag
+        // listItem.textContent = myArray[i] ; //
+
+        listItem.textContent = myArray[i]; // take the text of each index # and make it a list item
+        list.appendChild(listItem); // attach each list item to the unordered list
+
+      }
+  
+      // Don't edit the code below here!
+  
+      const section = document.querySelector('section');
+      // creates variable to select section in HTML
+
+      section.appendChild(list);
+      // variable is used to add list to section in HTML
+
+    </script>
+
+
+
+
   </body>
-  <script>
-    const myArray = ['tomatoes', 'chick peas', 'onions', 'rice', 'black beans'];
-    const list = document.createElement('ul');
 
-    // Add your code here
-
-    // Don't edit the code below here!
-
-    const section = document.querySelector('section');
-    section.appendChild(list);
-  </script>
+  
 
 </html>
+
+

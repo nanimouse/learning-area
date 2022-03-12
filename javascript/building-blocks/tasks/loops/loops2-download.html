@@ -42,6 +42,23 @@
 
     // Add your code here
 
+    i = 0;
+    while ( i <= phonebook.length){
+
+      if ( phonebook.name == name){
+        
+        let text = "The name is " + phonebook.name + " and the phone number is " + phonebook.number + ".";
+        para.appendChild(text);
+      }
+      
+      i++;
+    }
+
+
+
+
+
+
     // Don't edit the code below here!
     const section = document.querySelector('section');
     section.appendChild(para);
