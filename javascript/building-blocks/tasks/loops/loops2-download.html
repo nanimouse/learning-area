@@ -42,18 +42,23 @@
 
     // Add your code here
 
-    i = 0;
-    while ( i <= phonebook.length){
 
-      if ( phonebook.name == name){
+    console.log
+
+    
+
+    i = 0;
+    while ( i <= phonebook.length-1){
+
+      if ( phonebook[i].name  == name){
         
-        let text = "The name is " + phonebook.name + " and the phone number is " + phonebook.number + ".";
-        para.appendChild(text);
+        para.innerHTML = "The name is " + phonebook[i].name + " and the phone number is " + phonebook[i].number  + ".";
+    
+        break;
       }
       
       i++;
     }
-
 
 
 
